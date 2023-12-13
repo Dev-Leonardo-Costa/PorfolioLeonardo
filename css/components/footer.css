@@ -1,3 +1,4 @@
+/* Estilos do footer */
 footer {
   background-color: var(--light-tertiary-color);
 }
@@ -13,15 +14,27 @@ footer .footer__content .footer__contact span {
   font-weight: 500;
 }
 
+/* Efeito de hover nas imagens do rodapé */
+footer .footer__content ul {
+  display: flex;
+  justify-content: center; /* Centraliza as imagens horizontalmente */
+  padding: 0; /* Remove o espaçamento padrão */
+  list-style: none; /* Remove os marcadores da lista */
+}
+
 footer .footer__content ul li {
-  display: inline-block;
+  transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave */
 }
 
-footer .footer__content ul a {
-  display: inline-block;
-  padding: 1rem;
+footer .footer__content ul li:not(:last-child) {
+  margin-right: 1rem; /* Espaçamento entre as imagens */
 }
 
-footer .footer__content .footer__copyright {
-  font-size: 1.4rem;
+footer .footer__content ul li:hover {
+  transform: scale(1.2); /* Aumenta a escala do item ao passar o mouse por cima */
+}
+
+footer .footer__content ul li img {
+  width: 2rem; /* Tamanho original das imagens */
+  height: 2rem; /* Tamanho original das imagens */
 }

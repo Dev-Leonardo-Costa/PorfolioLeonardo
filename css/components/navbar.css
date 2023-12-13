@@ -121,4 +121,8 @@
     display: block;
     text-align: center;
   }
+
+  .navbar .navbar__content .navbar__mobile.active .mobile__links li a:hover {
+    color: var(--tertiary-color);
+  }
 }

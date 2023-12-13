@@ -1,3 +1,4 @@
+/* Estilos da seção 'about' */
 .about {
   display: flex;
   justify-content: space-between;
@@ -32,6 +33,16 @@
   max-width: 66rem;
 }
 
+/* Efeito de hover nas imagens da seção 'about' */
+.about .about__left ul li {
+  transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave */
+}
+
+.about .about__left ul li:hover {
+  transform: scale(1.2); /* Aumenta a escala do item ao passar o mouse por cima */
+}
+
+/* Estilos responsivos */
 @media only screen and (max-width: 768px) {
   .about {
     flex-direction: column;
